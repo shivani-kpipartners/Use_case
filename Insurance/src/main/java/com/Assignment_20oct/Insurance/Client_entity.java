@@ -18,9 +18,10 @@ public class Client_entity {
 	private int Medical_card_number;
 	private String Gender;
 	private int Age;
-	private int Compensation_amount;
-	private int Insurance_term;
+	private int Premium_amount;
+	private String Insurance_term;
 	private String Insurance_type;
+	private int Discount_percent;
 	public int getClient_id() {
 		return Client_id;
 	}
@@ -63,16 +64,16 @@ public class Client_entity {
 	public void setAge(int age) {
 		Age = age;
 	}
-	public int getCompensation_amount() {
-		return Compensation_amount;
+	public int getPremium_amount() {
+		return Premium_amount;
 	}
-	public void setCompensation_amount(int compensation_amount) {
-		Compensation_amount = compensation_amount;
+	public void setPremium_amount(int premium_amount) {
+		Premium_amount = premium_amount;
 	}
-	public int getInsurance_term() {
+	public String getInsurance_term() {
 		return Insurance_term;
 	}
-	public void setInsurance_term(int insurance_term) {
+	public void setInsurance_term(String insurance_term) {
 		Insurance_term = insurance_term;
 	}
 	public String getInsurance_type() {
@@ -81,6 +82,11 @@ public class Client_entity {
 	public void setInsurance_type(String insurance_type) {
 		Insurance_type = insurance_type;
 	}
-	
+	public int getDiscount_percent() {
+		return Discount_percent;
+	}
+	public void setDiscount_percent(int discount_percent) {
+		Discount_percent = discount_percent;
+	}
 	
 }

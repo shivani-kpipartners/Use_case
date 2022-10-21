@@ -9,5 +9,8 @@ public interface ClientRepo extends JpaRepository<Client_entity, Integer>{
 	
     @Query(value="SELECT * from Client_data c where c.Client_id= ?1",nativeQuery=true)
 	public List<Client_entity> getdetails(Integer Client_id);
+	
+	@Query(value="SELECT * from Client_data c",nativeQuery=true)
+	public List<Client_entity> getdetails();
 
 }
